@@ -1,0 +1,71 @@
+<openerp>
+    <data>
+        <!--项目 数据  -->
+        <record id="project001" model="realty.project">
+            <field name="name">长沙68号地块</field>
+            <field name="code">CS001D01</field>
+            <field name="value">0</field>
+            <field name="floor_area">10000</field>
+            <field name="plot_ratio">2.36</field>
+            <field name="description">长沙68号地块</field>
+        </record>
+        <!--产品 数据  -->
+        <record id="product001" model="realty.product">
+            <field name="name">高层住宅</field>
+            <field name="code">A1_01</field>
+            <field name="description">高层住宅, 34层以下(含34层)</field>
+        </record>
+        <record id="product002" model="realty.product">
+            <field name="name">洋房</field>
+            <field name="code">A1_02</field>
+            <field name="description">洋房, 13层以下(含13层)</field>
+        </record>
+        <record id="product003" model="realty.product">
+            <field name="name">独栋别墅</field>
+            <field name="code">A2_01</field>
+            <field name="description">独栋别墅</field>
+        </record>
+        <record id="product004" model="realty.product">
+            <field name="name">联排别墅</field>
+            <field name="code">A2_02</field>
+            <field name="description">联排别墅</field>
+        </record>
+        <!--科目 数据  -->
+        <record id="account001" model="realty.account">
+            <field name="name">建筑面积</field>
+            <field name="code">S000001</field>
+            <field name="description">建筑面积</field>
+        </record>
+        <record id="account002" model="realty.account">
+            <field name="name">占地面积</field>
+            <field name="code">S000002</field>
+            <field name="description">占地面积</field>
+        </record>
+        <record id="account003" model="realty.account">
+            <field name="name">销售面积</field>
+            <field name="code">S000003</field>
+            <field name="description">销售面积</field>
+        </record>
+        <!--  -->
+        <!--   <record id="object1" model="realty.realty"> -->
+        <!--     <field name="name">Object 1</field> -->
+        <!--     <field name="value">10</field> -->
+        <!--   </record> -->
+        <!--  -->
+        <!--   <record id="object2" model="realty.realty"> -->
+        <!--     <field name="name">Object 2</field> -->
+        <!--     <field name="value">20</field> -->
+        <!--   </record> -->
+        <!--  -->
+        <!--   <record id="object3" model="realty.realty"> -->
+        <!--     <field name="name">Object 3</field> -->
+        <!--     <field name="value">30</field> -->
+        <!--   </record> -->
+        <!--  -->
+        <!--   <record id="object4" model="realty.realty"> -->
+        <!--     <field name="name">Object 4</field> -->
+        <!--     <field name="value">40</field> -->
+        <!--   </record> -->
+        <!--  -->
+    </data>
+</openerp>

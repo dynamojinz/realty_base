@@ -47,6 +47,16 @@
         </tree>
       </field>
     </record>
+    <record model="ir.ui.view" id="building_list">
+      <field name="name">realty building list</field>
+      <field name="model">realty.building</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="code"/>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
     <record model="ir.ui.view" id="account_list">
       <field name="name">realty account list</field>
       <field name="model">realty.account</field>
@@ -71,6 +81,11 @@
     <record model="ir.actions.act_window" id="realty.action_window0202">
       <field name="name">Account Setting</field>
       <field name="res_model">realty.account</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.actions.act_window" id="realty.action_window0203">
+      <field name="name">Building Setting</field>
+      <field name="res_model">realty.building</field>
       <field name="view_mode">tree,form</field>
     </record>
 
@@ -101,5 +116,7 @@
               action="realty.action_window0201"/>
     <menuitem name="Account" id="realty.menu2_02" parent="realty.menu_2"
               action="realty.action_window0202"/>
+    <menuitem name="Building" id="realty.menu2_03" parent="realty.menu_2"
+              action="realty.action_window0203"/>
   </data>
 </openerp>

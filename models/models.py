@@ -38,6 +38,12 @@ class RealtyBuilding(models.Model):
     code = fields.Char()
     description = fields.Text()
 
+"""
+  考虑首先设计一个内存中的简单多维模型，支持按维度取数，聚合等
+  然后在该模型基础上实现投模系统
+"""
+
+
 # 科目
 class RealtyAccount(models.Model):
     _name = 'realty.account'

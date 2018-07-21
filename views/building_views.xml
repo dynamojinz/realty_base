@@ -1,0 +1,86 @@
+<openerp>
+  <data>
+    <!-- views -->
+    <!-- Buildings Begin-->
+    <record model="ir.ui.view" id="realty_building_view_tree">
+      <field name="name">realty.buiding.view.tree</field>
+      <field name="model">realty_base.building</field>
+      <field name="arch" type="xml">
+        <tree default_order="name">
+          <field name="code"/>
+          <field name="name"/>
+          <field name="product_id"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="realty_building_view_form">
+      <field name="name">realty.buiding.view.form</field>
+      <field name="model">realty_base.building</field>
+      <field name="arch" type="xml">
+          <form>
+              <sheet>
+                  <group>
+                      <group>
+                          <field name="code"/>
+                      </group>
+                      <group>
+                          <field name="name"/>
+                      </group>
+                  </group>
+                  <group>
+                      <group>
+                          <field name="product_id"/>
+                      </group>
+                  </group>
+              </sheet>
+          </form>
+      </field>
+    </record>
+    <!-- Buildings End -->
+    <!-- Products Begin -->
+    <record model="ir.ui.view" id="realty_procduct_view_tree">
+      <field name="name">realty.product.view.tree</field>
+      <field name="model">realty_base.product</field>
+      <field name="arch" type="xml">
+        <tree default_order="name">
+          <field name="code"/>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="realty_product_view_form">
+      <field name="name">realty.product.view.form</field>
+      <field name="model">realty_base.product</field>
+      <field name="arch" type="xml">
+          <form>
+              <sheet>
+                  <group>
+                      <group>
+                          <field name="code"/>
+                      </group>
+                      <group>
+                          <field name="name"/>
+                      </group>
+                  </group>
+              </sheet>
+          </form>
+      </field>
+    </record>
+    <!-- Products End -->
+    
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="action_view_building">
+      <field name="name">Buildings</field>
+      <field name="res_model">realty_base.building</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_view_product">
+      <field name="name">Products</field>
+      <field name="res_model">realty_base.product</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+  </data>
+</openerp>

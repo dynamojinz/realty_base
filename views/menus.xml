@@ -1,0 +1,13 @@
+<openerp>
+  <data>
+    <!-- explicit list view definition -->
+    <!-- Project View Definition -->
+    <!-- Top menu item -->
+    <menuitem name="Realty Configuration" id="menu_realty_base_root"/>
+    <!-- menu categories -->
+    <menuitem name="Project structure" id="menu_realty_base_structure" parent="menu_realty_base_root"/>
+    <!-- actions -->
+    <menuitem name="Buildings" id="menu_realty_base_building" parent="menu_realty_base_structure" action="action_view_building" sequence="10"/>
+    <menuitem name="Products" id="menu_realty_base_product" parent="menu_realty_base_structure" action="action_view_product" sequence="20"/>
+  </data>
+</openerp>

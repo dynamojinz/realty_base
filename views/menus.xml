@@ -1,7 +1,5 @@
 <openerp>
   <data>
-    <!-- explicit list view definition -->
-    <!-- Project View Definition -->
     <!-- Top menu item -->
     <menuitem name="Realty Configuration" id="menu_realty_base_root"/>
     <!-- menu categories -->
